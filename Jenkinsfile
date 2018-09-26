@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Install') {
       steps {
-        bat(script: 'npm_install.bat', encoding: 'utf8')
+        bat(script: 'D:/Proyectos/DevOps/Jenkins/npm_install.bat', encoding: 'utf8')
       }
     }
   }
