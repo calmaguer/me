@@ -6,5 +6,10 @@ pipeline {
         bat(script: 'D:/Proyectos/DevOps/Jenkins/npm_install.bat', encoding: 'utf8')
       }
     }
+    stage('Build') {
+      steps {
+        bat(script: 'D:/Proyectos/DevOps/Jenkins/npm_run_build.bat', encoding: 'utf8')
+      }
+    }
   }
 }
